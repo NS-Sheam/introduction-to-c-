@@ -7,7 +7,7 @@ int main(){
     cout << str.capacity() << endl;
     cout << str.length() << endl;
     // str.clear();
-    cout << str.empty() << endl; 
+    cout << str.empty() << " is Empty" << endl; 
     str.resize(20, 'x'); 
     cout << str << endl;
     return 0;
