@@ -1,1 +1,6 @@
-Student with minimum marks: Rifat 10 45
+Sania 8 99
+Sakib 7 98
+Akib 9 95
+Rahim 12 60
+Kamal 11 50
+Rifat 10 45

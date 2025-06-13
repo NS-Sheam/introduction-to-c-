@@ -7,6 +7,11 @@ class Student {
         int marks;
 };
 
+bool cmp(Student l, Student r){
+    if(l.marks > r.marks) return true;
+    else return false;
+}
+
 int main(){
 
     int n;
@@ -16,14 +21,9 @@ int main(){
     for(int i = 0; i < n; i++){
         cin >> a[i].name >> a[i].roll >> a[i].marks;
     }
-    // int minMarks = INT_MAX;
-    Student minStudent;
-    minStudent.marks = INT_MAX;
+   sort(a, a+n,cmp);
     for(int i = 0; i < n; i++){
-        if(a[i].marks < minStudent.marks){
-            minStudent = a[i];
-        }
+       cout << a[i].name << " " << a[i].roll << " " << a[i].marks << endl;
     }
-    cout << "Student with minimum marks: " << minStudent.name << " " << minStudent.roll << " " << minStudent.marks << endl;
     return 0;
 }
