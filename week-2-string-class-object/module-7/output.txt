@@ -1,3 +1,1 @@
-Nazmus Sakib  7 98
-Sania Ahmed  8 99
-Akib Hasan  9 95
+Student with minimum marks: Rifat 10 45

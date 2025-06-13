@@ -13,12 +13,16 @@ int main(){
     Student a[n];
 
     for(int i = 0; i < n; i++){
-        cin.ignore();
-        getline(cin, a[i].name);
-        cin >> a[i].roll >> a[i].marks;
+        cin >> a[i].name >> a[i].roll >> a[i].marks;
     }
+    // int minMarks = INT_MAX;
+    Student minStudent;
+    minStudent.marks = INT_MAX;
     for(int i = 0; i < n; i++){
-        cout << a[i].name << " " << a[i].roll << " " << a[i].marks << endl;
+        if(a[i].marks < minStudent.marks){
+            minStudent = a[i];
+        }
     }
+    cout << "Student with minimum marks: " << minStudent.name << " " << minStudent.roll << " " << minStudent.marks << endl;
     return 0;
 }
